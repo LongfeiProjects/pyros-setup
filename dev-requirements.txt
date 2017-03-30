@@ -1,5 +1,5 @@
 --index-url https://pypi.python.org/simple/
 
 -e .
-twine
+twine==1.8.1
 wheel
