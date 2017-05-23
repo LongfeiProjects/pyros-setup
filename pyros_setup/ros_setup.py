@@ -55,7 +55,7 @@ def ROS_setup_rosdistro_env(default_distro=None):
     distro = os.environ['ROS_DISTRO']
 
     # Setting env var like ROS would from install
-    distro_install_path = os.path.join('opt', 'ros', distro)
+    distro_install_path = os.path.join(os.path.sep, 'opt', 'ros', distro)
     if os.path.exists(distro_install_path):
 
         if os.environ.get('ROS_ROOT', None) is None:
